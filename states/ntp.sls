@@ -4,4 +4,4 @@ ntp_conf:
     - source: salt://files/ntp.conf
 ntp_restart:
   cmd.run: 
-    - name: "systemctl restart timesyncd"
+    - name: "systemctl restart sytemd-timesyncd.service"
