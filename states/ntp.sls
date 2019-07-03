@@ -5,3 +5,5 @@ ntp_conf:
 ntp_restart:
   cmd.run: 
     - name: "systemctl restart systemd-timesyncd.service"
+    - onchanges:
+      - cmd: ntp_conf
